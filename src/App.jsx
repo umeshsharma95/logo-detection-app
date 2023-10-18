@@ -9,7 +9,9 @@ function App() {
 
   return (
     <div className='appContainer'>
-      {!imageDetected && <MindARViewer setImageDetected={setImageDetected} />}
+      {!imageDetected && <div className='scanerContainer d-flex justify-content-center align-items-center'>
+        <MindARViewer setImageDetected={setImageDetected} />
+      </div>}
       <div>
         <CongratsPopup isOpen={imageDetected} setIsOpen={setImageDetected} />
       </div>

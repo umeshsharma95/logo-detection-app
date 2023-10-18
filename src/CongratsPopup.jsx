@@ -24,7 +24,7 @@ function CongratsPopup({ isOpen, setIsOpen }) {
   }, [isOpen])
 
   return (
-    <Modal size='sm' centered isOpen={isOpen} toggle={toggle}>
+    <Modal size='md' centered isOpen={isOpen} toggle={toggle}>
       <ModalHeader toggle={toggle} close={closeBtn}></ModalHeader>
         <ModalBody className='d-flex flex-column align-items-center w-100'>
           <Lottie 
